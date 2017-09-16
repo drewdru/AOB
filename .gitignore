@@ -1,0 +1,12 @@
+env/
+Task/
+
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+.vscode/
+
+*.qmlc
+*.jsc
+*.deb
