@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    build: .
+    # image: aob_web:latest
+    environment:
+      DISPLAY: unix$DISPLAY
+      XSOCK: $XSOCK:ro
+      XSOCK: /tmp/.X11-unix
+    volumes:
+      - /tmp/runtime-root:/tmp/runtime-root
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /dev/shm:/dev/shm
+      - /dev/snd:/dev/snd 
+      - .:/code
+    command: bash -c "python3 main.py"
