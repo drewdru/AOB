@@ -1,0 +1,3 @@
+[submodule "AOI"]
+	path = AOI
+	url = git@github.com:drewdru/AOI.git
